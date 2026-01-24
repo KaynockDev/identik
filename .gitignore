@@ -3,7 +3,10 @@
 /public/hot
 /public/storage
 /storage/*.key
+/storage/framework
+/storage/logs
 /vendor
+/bootstrap/cache
 .env
 .env.backup
 .env.production
@@ -19,3 +22,4 @@ yarn-error.log
 *.log
 .DS_Store
 Thumbs.db
+package-lock.json
