@@ -1,0 +1,2 @@
+<div id="map" class="h-[311px] border-2 border-contactBorder rounded-[20px] "></div>
+<?php /**PATH /Users/yusufozturk/Documents/identik yedekler/identik.com.tr/resources/views/components/map.blade.php ENDPATH**/ ?>
