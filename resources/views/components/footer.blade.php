@@ -21,6 +21,7 @@
             <p class="text-2xl font-medium tracking-tighter">{{ __('Kurumsal') }}</p>
             <div class="flex flex-col items-start space-y-6">
                 <a href="{{ route('doctors') }}" class="tracking-tighter ">{{ __('Doktorlarımız') }}</a>
+                <a href="{{ route('blogs') }}" class="tracking-tighter ">{{ __('Blog') }}</a>
                 <a href="{{ route('faq') }}" class="tracking-tighter ">{{ __('SSS') }}</a>
                 <a href="{{ route('kvkk') }}" class="tracking-tighter ">{{ __('KVKK') }}</a>
                 <a href="{{ route('privacy') }}" class="tracking-tighter ">{{ __('Gizlilik Politikası') }}</a>

@@ -36,9 +36,9 @@
                                     <p class="text-4xl font-semibold tracking-tighter text-text">{{ $item->name }}</p>
 
                                 </div>
-                                <p class="text-2xl font-light tracking-tighter text-text">{{ $item->description }}</p>
+                                <div class="text-2xl font-light tracking-tighter prose text-text">@markdown($item->description)</div>
                             </div>
-                            <img src="{{ Storage::url($item->image) }}" class="object-cover rounded-3xl aspect-square"
+                            <img src="{{ Storage::disk('public')->url($item->image) }}" class="object-cover rounded-3xl aspect-square"
                                 alt="{{ $item->name }}">
                         </div>
 

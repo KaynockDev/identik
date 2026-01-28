@@ -50,12 +50,15 @@ class TreatmentResource extends Resource
                     ->maxLength(255),
 
 
-                Forms\Components\Textarea::make('description')
+                Forms\Components\MarkdownEditor::make('description')
                     ->columnSpanFull()
                     ->label("Açıklama")
-                    ->required(),
+                    ->disableToolbarButtons(["code", "table"])
+                    ->required()
+                    ->helperText('Tedavi açıklamasını detaylı olarak girebilirsiniz. Markdown formatı desteklenir.'),
                 Forms\Components\FileUpload::make('image')
                     ->columnSpanFull()
+                    ->disk('public')
                     ->directory("treatments")
                     ->label("Görsel")
                     ->image()
